@@ -16,6 +16,7 @@ module.exports = {
         'black-color': generateColor('--black-color'),
         'blue-color': generateColor('--blue-color'),
         'dark-green-color': generateColor('--dark-green-color'),
+        'muted-color': 'rgba(255, 255, 255, 0.2)',
       },
       fontFamily: {
         proxima: 'Proxima Nova',

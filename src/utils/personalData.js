@@ -11,5 +11,6 @@ export const PERSONAL_DATA = {
     twitter: 'https://www.twitter.com/maro_okolosio/',
     instagram: 'https://www.instagram.com/maro_okolosio/',
     email: 'omarookolosio94@gmail.com',
+    cv: 'https://drive.google.com/file/d/1IGdyTe7Z92igYtXxtYGugpu0FiBYkPP3/view?usp=sharing',
   },
 };
