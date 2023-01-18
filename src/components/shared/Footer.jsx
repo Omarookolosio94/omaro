@@ -12,14 +12,22 @@ function Footer() {
     <div className="bg-black-color text-white">
       <Container>
         <div className="py-16 text-center">
+          <a
+            href={data.socials.cv}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block items-center rounded px-8 py-4 w-auto border border-white hover:border-opacity-70 hover:bg-dark-green-color"
+          >
+            My Résumé
+          </a>
           {/* 
           <p className="text-xl font-light mb-6">Oghenemaro Prosper Okolosio</p>
           */}
-          <p className="font-light">
+          <p className="font-light mt-10">
             &copy; {new Date().getFullYear()} omaro | All Rights Reserved
           </p>
 
-          <div className="flex justify-center mt-4 gap-4">
+          <div className="flex justify-center mt-5 gap-4">
             <a
               href={data.socials.linkedin}
               target="_blank"
@@ -45,7 +53,6 @@ function Footer() {
             >
               <img src={twitter} alt={data.socials.twitter} />
             </a>
-            */}
             <a
               href={data.socials.cv}
               target="_blank"
@@ -54,6 +61,7 @@ function Footer() {
             >
               <img src={cv} alt={data.socials.cv} />
             </a>
+            */}
             <a
               href={`mailto:${data.socials.email}`}
               target="_blank"
