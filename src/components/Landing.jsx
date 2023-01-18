@@ -30,16 +30,18 @@ function Landing() {
           </div>
           <div className="flex border border-muted-color border-r-0 border-l-0">
             <div className="flex border-r border-r-muted-color gap-6 p-2">
-              <span className="text-exs">Date:</span>
+              <span className="text-exs">date:</span>
               <span className="text-light text-center">{getCurrentDate()}</span>
             </div>
             <div className="flex gap-4 justify-between p-2 md:gap-6">
-              <span className="text-exs">Loc:</span>
+              <span className="text-exs">loc:</span>
               <span className="text-light text-center">Nigeria</span>
             </div>
           </div>
           <div className="text-center border border-muted-color p-2">
-            Full stack Developer
+            <span className="text-light text-center text-md md:text-lg">
+              {data.bio.role}
+            </span>
           </div>
         </div>
       </div>

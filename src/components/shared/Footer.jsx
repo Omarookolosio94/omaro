@@ -12,7 +12,9 @@ function Footer() {
     <div className="bg-black-color text-white">
       <Container>
         <div className="py-16 text-center">
+          {/* 
           <p className="text-xl font-light mb-6">Oghenemaro Prosper Okolosio</p>
+          */}
           <p className="font-light">
             &copy; {new Date().getFullYear()} omaro | All Rights Reserved
           </p>
@@ -34,6 +36,7 @@ function Footer() {
             >
               <img src={github} alt={data.socials.github} />
             </a>
+            {/* 
             <a
               href={data.socials.twitter}
               target="_blank"
@@ -42,6 +45,7 @@ function Footer() {
             >
               <img src={twitter} alt={data.socials.twitter} />
             </a>
+            */}
             <a
               href={data.socials.cv}
               target="_blank"

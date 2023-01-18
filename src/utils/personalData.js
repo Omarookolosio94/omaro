@@ -4,6 +4,7 @@ export const PERSONAL_DATA = {
     firstname: 'Oghenemaro',
     surname: 'Okolosio',
     middlename: 'Prosper',
+    role: 'Software Engineer'
   },
   socials: {
     linkedin: 'https://www.linkedin.com/in/oghenemaro-okolosio/',
@@ -11,6 +12,6 @@ export const PERSONAL_DATA = {
     twitter: 'https://www.twitter.com/maro_okolosio/',
     instagram: 'https://www.instagram.com/maro_okolosio/',
     email: 'omarookolosio94@gmail.com',
-    cv: 'https://drive.google.com/file/d/1IGdyTe7Z92igYtXxtYGugpu0FiBYkPP3/view?usp=sharing',
+    cv: 'https://docs.google.com/document/d/1Ym8Yju7XsK1uO9oL3P6YlO0rQCv3v0Ua27kDCi7PKpQ/edit?usp=sharing',
   },
 };
