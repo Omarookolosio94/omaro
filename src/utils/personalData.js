@@ -4,8 +4,10 @@ export const PERSONAL_DATA = {
     firstname: 'Oghenemaro',
     surname: 'Okolosio',
     middlename: 'Prosper',
-    role: 'Software Engineer'
+    role: 'Software Engineer',
+    location: 'Lagos, Nigeria',
   },
+  skills: ['C#', 'Javascript', 'Git/Github', 'MSSQL', 'Typescript'],
   socials: {
     linkedin: 'https://www.linkedin.com/in/oghenemaro-okolosio/',
     github: 'https://github.com/omarookolosio94',

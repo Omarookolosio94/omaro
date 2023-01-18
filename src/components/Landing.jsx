@@ -17,10 +17,9 @@ function Landing() {
       >
         <div className="w-4/5 absolute left-8 bottom-20 text-white border border-2 border-muted-color bg-black-color p-4 md:w-96 md:left-auto md:p-6 md:bottom-20 rounded">
           <div className="p-2 flex justify-between text-exs">
-            <span>Javascript</span>
-            <span>C#</span>
-            <span>Typescript</span>
-            <span>Node</span>
+            {data.skills.map((x) => (
+              <span>{x}</span>
+            ))}
           </div>
           <div className="flex border border-muted-color border-r-0 border-l-0 gap-6 p-2">
             <span className="text-exs">name:</span>
@@ -34,8 +33,10 @@ function Landing() {
               <span className="text-light text-center">{getCurrentDate()}</span>
             </div>
             <div className="flex gap-4 justify-between p-2 md:gap-6">
-              <span className="text-exs">loc:</span>
-              <span className="text-light text-center">Nigeria</span>
+              <span className="text-exs">location:</span>
+              <span className="text-light text-center">
+                {data.bio.location}
+              </span>
             </div>
           </div>
           <div className="text-center border border-muted-color p-2">
