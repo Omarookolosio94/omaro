@@ -1,9 +1,9 @@
 import React from 'react';
-import mugshot from '../static/maro_sm.jpeg';
-import { getCurrentDate } from '../utils/Helpers';
-import { PERSONAL_DATA as data } from '../utils/personalData';
+import mugshot from '../assets/maro_sm.jpeg';
+import { PORTFOLIO as data } from '../core/consts/portfolio';
+import { getCurrentDate } from '../core/services/helpers';
 
-function Landing() {
+const Home = () => {
   return (
     <div>
       <div
@@ -48,6 +48,6 @@ function Landing() {
       </div>
     </div>
   );
-}
+};
 
-export default Landing;
+export default Home;

@@ -1,9 +1,9 @@
 import React from 'react';
-import linkedin from '../../static/icon/linkedin.svg';
-import github from '../../static/icon/github.svg';
-import mail from '../../static/icon/mail.svg';
-import Container from './Container';
-import { PERSONAL_DATA as data } from '../../utils/personalData';
+import linkedin from '../../assets/icon/linkedin.svg';
+import github from '../../assets/icon/github.svg';
+import mail from '../../assets/icon/mail.svg';
+import Container from './container';
+import { PORTFOLIO as data } from '../consts/portfolio';
 
 function Footer() {
   return (
