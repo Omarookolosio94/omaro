@@ -13,6 +13,7 @@ module.exports = {
     extend: {
       colors: {
         'white-color': generateColor('--white-color'),
+        'darkwhite': '#e9e9e9',
         'black-color': generateColor('--black-color'),
         'blue-color': generateColor('--blue-color'),
         'dark-green-color': generateColor('--dark-green-color'),
@@ -20,6 +21,9 @@ module.exports = {
       },
       fontFamily: {
         proxima: 'Proxima Nova',
+        'feijoa-display': 'Feijoa Display, serif',
+        operator: 'Operator, monospace',
+        sohne: 'Sohne, sans-serif',
       },
       fontSize: {
         exs: '10px',
