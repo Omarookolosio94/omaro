@@ -3,6 +3,8 @@ import { PORTFOLIO } from '../core/consts/portfolio';
 import { btnLg } from '../core/consts/styling';
 
 const Projects = () => {
+  // TODO: Include images frome each project
+  // TODO: Make showcase a slideshow
   return (
     <div className="mt-[80px]">
       {PORTFOLIO?.projects?.map((proj) => (
@@ -59,7 +61,7 @@ const Projects = () => {
                       href={proj?.url?.api}
                       target="_blank"
                       rel="noopener noreferrer"
-                       className={`${btnLg} bg-gray-900 text-gray-300 hover:scale-105 gap-2 hover:text-gray-300`}
+                      className={`${btnLg} bg-gray-900 text-gray-300 hover:scale-105 gap-2 hover:text-gray-300`}
                     >
                       Explore API
                     </a>
@@ -69,7 +71,7 @@ const Projects = () => {
                       href={proj?.url?.github}
                       target="_blank"
                       rel="noopener noreferrer"
-                       className={`${btnLg} bg-gray-900 text-gray-300 hover:scale-105 gap-2 hover:text-gray-300`}
+                      className={`${btnLg} bg-gray-900 text-gray-300 hover:scale-105 gap-2 hover:text-gray-300`}
                     >
                       View Code
                     </a>

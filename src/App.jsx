@@ -22,6 +22,8 @@ function App() {
 
   const [hours, getHours] = useState(new Date().getHours());
 
+  // TODO: Add dark theme
+
   return (
     <Router>
       <div className="relative">

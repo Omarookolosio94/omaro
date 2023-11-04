@@ -5,6 +5,8 @@ import { getCurrentDate } from '../core/services/helpers';
 import chalkbg from '../assets/blackbg.jpg';
 
 const Home = () => {
+  // TODO: Add about info
+  // TODO: Add contact form
   return (
     <div>
       <div
