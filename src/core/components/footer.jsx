@@ -14,7 +14,7 @@ function Footer() {
             href={data.socials.cv}
             target="_blank"
             rel="noopener noreferrer"
-            className={`squircle inline-block font-sohne text-9pt font-semibold transition duration-300 ease-in-out hover:text-black/80 hover:bg-blue-500 bg-white text-gray-900 px-8 py-4`}
+            className={`squircle inline-block font-sohne text-9pt font-semibold transition duration-300 ease-in-out  bg-white text-gray-900 px-8 py-4 hover:scale-105`}
           >
             My Résumé
           </a>
