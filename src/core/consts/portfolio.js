@@ -38,7 +38,7 @@ export const PORTFOLIO = {
       name: 'Inventory Hub',
       color: 'bg-green-gradient',
       url: {
-        web: 'https://https://myinventoryhub.netlify.app',
+        web: 'https://myinventoryhub.netlify.app',
         api: 'https://usewebeffect-001-site1.itempurl.com/swagger/index.html',
         github: 'https://github.com/Omarookolosio94/InventoryHub',
       },
