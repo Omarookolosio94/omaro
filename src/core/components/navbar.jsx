@@ -27,19 +27,13 @@ function Nav() {
   // TODO: On scroll change color of navbar
   return (
     <div
-      className="fixed top-0 left-0 right-0 border border-b-darkwhite"
+      className="fixed top-0 left-0 right-0 bg-black bg-opacity-10 backdrop-blur-sm backdrop-filter"
       style={{
-        background: 'rgb(254, 254, 254)',
         zIndex: 9999,
       }}
     >
       <Container>
-        <div
-          style={{
-            background: 'rgba(254, 254, 254, 0.15)',
-          }}
-          className="py-6 flex justify-between items-center"
-        >
+        <div className="py-6 flex justify-between items-center">
           <div className="flex items-center gap-2">
             <Link
               to="/home"
@@ -81,7 +75,7 @@ function Nav() {
             </NavLink>
             <button
               className={`w-7 h-7 flex justify-center items-center rounded transition duration-300 ease-in-out hover:scale-105 hover:bg-blue-500 ${
-                playing ? 'bg-blue-600' : 'bg-black'
+                playing ? 'bg-[#256B92]' : 'bg-black'
               }`}
               onClick={playsong}
             >

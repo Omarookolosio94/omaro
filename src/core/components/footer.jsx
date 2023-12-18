@@ -7,7 +7,7 @@ import { PORTFOLIO as data } from '../consts/portfolio';
 
 function Footer() {
   return (
-    <div className="bg-black-color text-white">
+    <div className="text-white bg-black bg-opacity-10 backdrop-blur-sm backdrop-filter">
       <Container>
         <div className="py-16 text-center">
           <a

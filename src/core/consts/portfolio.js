@@ -18,22 +18,6 @@ export const PORTFOLIO = {
   },
   projects: [
     {
-      name: 'Inventory Hub',
-      color: 'bg-green-gradient',
-      url: {
-        web: 'https://heroic-banoffee-58162f.netlify.app/',
-        api: 'https://usewebeffect-001-site1.itempurl.com/swagger/index.html',
-        github: 'https://github.com/Omarookolosio94/InventoryHub',
-      },
-      about: [
-        'Inventory Hub is a cloud-based inventory and sales management solution that helps businesses manage multiple shop locations from a single platform. Inventory Hub helps businesses to save time and money, improve efficiency and accuracy, and get real-time insights into their inventory and sales data ',
-        'I designed and built this solution from scratch. The backend runs on a .NET core API, while the frontend website was developed using React',
-      ],
-      roles: 'Fullstack developer',
-      tech: ['.NET Core', 'React Js', 'Typescript', 'MSSQL', 'Tailwind'],
-      license: 'Open Source',
-    },
-    {
       name: 'Stanbic IBTC EZ Cash',
       color: 'bg-blue-gradient',
       url: {
@@ -50,6 +34,23 @@ export const PORTFOLIO = {
       tech: ['.NET MVC', '.NET Framework'],
       license: 'Commercial',
     },
+    {
+      name: 'Inventory Hub',
+      color: 'bg-green-gradient',
+      url: {
+        web: 'https://https://myinventoryhub.netlify.app',
+        api: 'https://usewebeffect-001-site1.itempurl.com/swagger/index.html',
+        github: 'https://github.com/Omarookolosio94/InventoryHub',
+      },
+      about: [
+        'Inventory Hub is a cloud-based inventory and sales management solution that helps businesses manage multiple shop locations from a single platform. Inventory Hub helps businesses to save time and money, improve efficiency and accuracy, and get real-time insights into their inventory and sales data ',
+        'I designed and built this solution from scratch. The backend runs on a .NET core API, while the frontend website was developed using React',
+      ],
+      roles: 'Fullstack developer',
+      tech: ['.NET Core', 'React Js', 'Typescript', 'MSSQL', 'Tailwind'],
+      license: 'Open Source',
+    },
+
     {
       name: 'Stanbic IBTC Online Account Onboarding',
       color: 'bg-yellow-gradient',
