@@ -20,7 +20,7 @@ function App() {
     });
   };
 
-  const [hours, getHours] = useState(new Date().getHours());
+  const [hours,] = useState(new Date().getHours());
 
   // TODO: Add dark theme
 

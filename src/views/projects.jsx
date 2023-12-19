@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { PORTFOLIO } from '../core/consts/portfolio';
 import { btnLg } from '../core/consts/styling';
 import next from '../assets/icon/next.png';
@@ -14,14 +14,15 @@ const Projects = () => {
   // TODO: Include images frome each project
   // TODO: Make showcase a slideshow
   const projects = PORTFOLIO.projects;
-
+  let slider = () => {};
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    adaptiveHeight: true,
+    adaptiveHeight: false,
+    arrows: false,
     nextArrow: <img src={next} alt="Next" />,
     prevArrow: <img src={prev} alt="Previous" />,
   };
@@ -29,8 +30,9 @@ const Projects = () => {
   return (
     <div className="mt-[100px]">
       <Slider
+        ref={(c) => (slider = c)}
         {...settings}
-        className="z-[500] w-10/12 h-auto md:h-[70vh] mx-auto mb-[40px]"
+        className="z-[500] w-full h-auto md:h-[70vh] mx-auto mb-[40px]"
       >
         {projects?.map((project, index) => (
           <div>
@@ -59,7 +61,7 @@ const Projects = () => {
                     ))}
                   </div>
 
-                  <div className="flex items-center gap-5 mt-[40px]">
+                  <div className="flex flex-wrap items-center gap-5 mt-[40px]">
                     {project?.url?.web?.length > 1 && (
                       <a
                         href={project?.url?.web}
@@ -110,6 +112,22 @@ const Projects = () => {
           </div>
         ))}
       </Slider>
+      <div className="pb-[24px] w-full flex justify-center items-center gap-5">
+        <button
+          onClick={() => slider.slickPrev()}
+          className="flex items-center gap-2"
+        >
+          <span className="text-[14px] font-bold">Previous</span>
+          <img src={prev} alt="" className="w-[45px] h-[45px]" />
+        </button>
+        <button
+          onClick={() => slider.slickNext()}
+          className="flex items-center gap-2"
+        >
+          <img src={next} alt="" className="w-[45px] h-[45px]" />
+          <span className="text-[14px] font-bold">Next</span>
+        </button>
+      </div>
     </div>
   );
 };
