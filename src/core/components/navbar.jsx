@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import play from '../../assets/play.png';
-import pause from '../../assets/pause.png';
-import Container from './container';
 import { Link, NavLink } from 'react-router-dom';
 import { btn } from '../consts/styling';
+import Container from './container';
+import play from '../../assets/icon/play.png';
+import pause from '../../assets/icon/pause.png';
+import home from '../../assets/icon/home.svg';
+import coding from '../../assets/icon/coding.svg';
 
 function Nav() {
   const [song, setSong] = useState(document.getElementById('playlist'));
@@ -61,16 +63,18 @@ function Nav() {
                   : `${btn} bg-gray-900 text-gray-400 hover:bg-green-500`
               }
             >
+              <img src={home} className="w-[25px] h-[25px]" alt="" />
               Home
             </NavLink>
             <NavLink
               to="/projects"
               className={({ isActive }) =>
                 isActive
-                  ? `${btn} bg-yellow-500 text-black`
-                  : `${btn} bg-gray-900 text-gray-400 hover:bg-yellow-500`
+                  ? `${btn} bg-green-500 text-black`
+                  : `${btn} bg-gray-900 text-gray-400 hover:bg-green-500`
               }
             >
+              <img src={coding} alt="" className="w-[25px] h-[25px]" />
               Projects
             </NavLink>
             <button

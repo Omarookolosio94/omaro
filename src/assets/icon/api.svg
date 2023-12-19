@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="430" height="430"
+    style="width:100%;height:100%;transform:translate3d(0,0,0);content-visibility:visible"
+    viewBox="0 0 430 430">
+    <defs>
+        <clipPath id="c">
+            <path d="M0 0h430v430H0z" />
+        </clipPath>
+        <clipPath id="g">
+            <path d="M0 0h430v430H0z" />
+        </clipPath>
+        <clipPath id="f">
+            <path d="M0 0h430v430H0z" />
+        </clipPath>
+        <clipPath id="d">
+            <path d="M0 0h430v430H0z" />
+        </clipPath>
+        <path id="b" style="display:none" />
+        <path id="a" style="display:none" />
+        <mask id="h" mask-type="alpha">
+            <use xmlnsNs1="http://www.w3.org/1999/xlink" ns1Href="#a" />
+        </mask>
+        <mask id="e" mask-type="alpha">
+            <use xmlnsNs2="http://www.w3.org/1999/xlink" ns2Href="#b" />
+        </mask>
+    </defs>
+    <g clipPath="url(#c)">
+        <g clipPath="url(#d)" style="display:none">
+            <g style="display:none">
+                <path fill="none" class="primary" />
+                <path class="primary" />
+            </g>
+            <g fill="none" style="display:none">
+                <path class="secondary" />
+                <path class="secondary" />
+                <path class="secondary" />
+                <path class="secondary" />
+                <path class="secondary" />
+            </g>
+            <g mask="url(#e)" style="mix-blend-mode:multiply;display:none">
+                <path class="primary" />
+                <path class="primary" style="mix-blend-mode:multiply" />
+            </g>
+        </g>
+        <g clipPath="url(#f)" style="display:block">
+            <path fill="#3A3347"
+                d="M-155-135c-16.569 0-30 13.431-30 30v210c0 16.569 13.431 30 30 30h310c16.569 0 30-13.431 30-30v-210c0-16.569-13.431-30-30-30h-310z"
+                class="primary" style="display:block" transform="translate(215 215)" />
+            <g opacity=".4" style="mix-blend-mode:multiply;display:block">
+                <path fill="#3A3347"
+                    d="M30 109.835v210c0 16.569 13.431 30 30 30h310c16.569 0 30-13.431 30-30v-210c0-16.569-13.431-30-30-30H60c-16.569 0-30 13.431-30 30zm20 0c0-5.523 4.477-10 10-10h310c5.523 0 10 4.477 10 10v210c0 5.523-4.477 10-10 10H60c-5.523 0-10-4.477-10-10v-210z"
+                    class="primary" opacity="1" />
+            </g>
+            <g opacity=".3" style="mix-blend-mode:multiply;display:block">
+                <path fill="#3A3347"
+                    d="M30 109.835c0-16.569 13.431-30 30-30h55c-16.569 0-30 13.431-30 30v210c0 16.569 13.431 30 30 30H60c-16.569 0-30-13.431-30-30v-210z"
+                    class="primary" opacity="1" />
+            </g>
+            <path fill="none" stroke="#08A88A" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="7"
+                d="M310 165h-35m70 0h-35m0 100h-35m70 0h-35m0 0V165M187 265v-34.722m0 0V165h38.889c15.341 0 27.778 12.437 27.778 27.778v9.722c0 15.341-12.437 27.778-27.778 27.778H187zM117.196 165h7.621l23.969 71.444 10.028 28.563m-82.853-.047 10.003-28.548L109.91 165h7.286m31.688 71.462-62.938-.062"
+                class="secondary" style="display:block" />
+            <g fill="none" style="display:none">
+                <path class="secondary" />
+                <path class="secondary" />
+                <path class="secondary" />
+                <path class="secondary" />
+                <path class="secondary" />
+            </g>
+        </g>
+        <g clipPath="url(#g)" style="display:none">
+            <path class="primary" style="display:none" />
+            <g fill="none" mask="url(#h)" style="display:none">
+                <path class="secondary" />
+                <path class="secondary" />
+                <path class="secondary" />
+                <path class="secondary" />
+                <path class="secondary" />
+            </g>
+            <g style="mix-blend-mode:multiply;display:none">
+                <path class="primary" />
+                <path class="primary" style="mix-blend-mode:multiply" />
+            </g>
+        </g>
+    </g>
+</svg>

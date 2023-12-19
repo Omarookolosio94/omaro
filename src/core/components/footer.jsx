@@ -2,6 +2,7 @@ import React from 'react';
 import linkedin from '../../assets/icon/linkedin.svg';
 import github from '../../assets/icon/github.svg';
 import mail from '../../assets/icon/mail.svg';
+import resume from '../../assets/icon/resume.svg';
 import Container from './container';
 import { PORTFOLIO as data } from '../consts/portfolio';
 
@@ -14,9 +15,12 @@ function Footer() {
             href={data.socials.cv}
             target="_blank"
             rel="noopener noreferrer"
-            className={`squircle inline-block font-sohne text-9pt font-semibold transition duration-300 ease-in-out  bg-white text-gray-900 px-8 py-4 hover:scale-105`}
+            className={`squircle inline-block font-sohne text-9pt font-semibold transition duration-300 ease-in-out  bg-gray-900 text-gray-400 px-8 py-4 hover:bg-[#338a07] hover:text-darkwhite`}
           >
-            My Résumé
+            <div className="flex items-center gap-2">
+              <img src={resume} className="w-[25px] h-[25px]" alt="" />
+              My Résumé
+            </div>
           </a>
           {/* 
           <p className="text-xl font-light mb-6">Oghenemaro Prosper Okolosio</p>

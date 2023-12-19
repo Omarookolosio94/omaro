@@ -7,7 +7,7 @@
 						</defs>
 						<g data-name="Group 3999">
 							<g data-name="Group 177">
-								<g data-name="Group 176" clip-path="url(#a)" transform="translate(8.811 12.17)"><path data-name="Path 387" d="m15.7 11.544-1.963-1.967a1.865 1.865 0 0 0-1.354-.614 1.929 1.929 0 0
+								<g data-name="Group 176" clipPath="url(#a)" transform="translate(8.811 12.17)"><path data-name="Path 387" d="m15.7 11.544-1.963-1.967a1.865 1.865 0 0 0-1.354-.614 1.929 1.929 0 0
 											0-1.366.609l-1.024 1.024-.147-.074a3.684 3.684 0 0 1-.335-.182 12.128 12.128 0 0
 											1-2.896-2.639 7.219 7.219 0 0 1-.88-1.353c.259-.243.5-.491.735-.728l.3-.3a1.951
 											1.951 0 0 0 .625-1.379 1.939 1.939 0 0
@@ -32,7 +32,7 @@
 											5.047 0 0 1-.393-2.157Z" fill="#fff"></path>
 								</g>
 							</g>
-							<g data-name="Group 270" clip-path="url(#b)">
+							<g data-name="Group 270" clipPath="url(#b)">
 								<g data-name="Group 269"><path data-name="Path 404" d="M22.915.163S6.982-.6 1.564 13.505 6.302 36.78 16.223 36.097c7.853-.541
 											12.144-3.123 15.551-8.487 3.649-5.747 2.868-25.139-16.188-23.182" fill="none" stroke="#fff" stroke-width=".5"></path>
 								</g>

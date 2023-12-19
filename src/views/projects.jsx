@@ -1,127 +1,115 @@
 import React, { useState } from 'react';
 import { PORTFOLIO } from '../core/consts/portfolio';
 import { btnLg } from '../core/consts/styling';
-import next from '../assets/next.png';
-import prev from '../assets/prev.png';
+import next from '../assets/icon/next.png';
+import prev from '../assets/icon/prev.png';
+import repo from '../assets/icon/repo.svg';
+import api from '../assets/icon/api.svg';
+import web from '../assets/icon/web.svg';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 const Projects = () => {
   // TODO: Include images frome each project
   // TODO: Make showcase a slideshow
   const projects = PORTFOLIO.projects;
 
-  const [current, setCurrent] = useState(0);
-  const [selected, setSelected] = useState(projects[0]);
-
-  const getNext = () => {
-    if (current < projects?.length - 1) {
-      setCurrent(current + 1);
-      setSelected(projects[current + 1]);
-    } else {
-      setCurrent(0);
-      setSelected(projects[0]);
-    }
-  };
-
-  const getPrev = () => {
-    if (current > 0) {
-      setCurrent(current - 1);
-      setSelected(projects[current - 1]);
-    } else {
-      setCurrent(projects?.length - 1);
-      setSelected(projects[projects?.length - 1]);
-    }
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    adaptiveHeight: true,
+    nextArrow: <img src={next} alt="Next" />,
+    prevArrow: <img src={prev} alt="Previous" />,
   };
 
   return (
-    <div className="mt-[80px]">
-      <div
-        className={`overflow-hidden h-screen mx-auto relative flex flex-col items-center justify-center`}
+    <div className="mt-[100px]">
+      <Slider
+        {...settings}
+        className="z-[500] w-10/12 h-auto md:h-[70vh] mx-auto mb-[40px]"
       >
-        <div
-          className={`w-11/12 mx-auto md:container md:mx-auto mt-[-40px] transition-[margin] duration-150 ease-in-out`}
-        >
-          <p className="w-full mb-[20px] text-center font-feijoa-display text-[24px] font-black text-black">
-            {selected?.name}
-          </p>
-          <div className="flex flex-col md:flex-row items-center justify-center gap-8 font-sohne">
-            <div className="w-full md:w-2/4 lg:w-1/4">
-              {selected?.about?.map((work) => (
-                <p className="w-full my-[16px] text-normal text-black/90">
-                  {work}
-                </p>
-              ))}
-            </div>
-            <div className="w-full md:w-2/4 lg:w-1/4">
-              <div className="mb-5">
-                <div className="mb-5">
-                  <p className="uppercase font-bold mb-2">Technologies</p>
-                  <div className="flex gap-2">
-                    {selected?.tech?.map((tec) => (
-                      <span className="squircle text-[12px] bg-gray-500 text-gray-100 px-2 py-[2px]">
-                        {tec}
-                      </span>
-                    ))}
-                  </div>
+        {projects?.map((project, index) => (
+          <div>
+            <p className="w-full mb-[16px] text-center font-feijoa-display text-[24px] font-black text-black">
+              {project?.name}
+            </p>
+            <div
+              key={index}
+              className={`w-full flex flex-row items-center justify-center`}
+            >
+              <div className="font-sohne w-full md:3/4 lg:w-2/4 px-[25px] py-[25px] rounded-[5px] bg-black bg-opacity-10 border-[3px] border-muted-color border-backdrop-blur-sm backdrop-filter">
+                <div>
+                  {project?.about?.map((work) => (
+                    <p className="w-full mb-[16px] text-normal text-black/90">
+                      {work}
+                    </p>
+                  ))}
                 </div>
                 <div>
-                  <p className="uppercase font-bold mb-2">License</p>
-                  <div>
-                    <span className="squircle text-[12px] bg-gray-500 text-gray-100 px-2 py-[2px]">
-                      {selected?.license}
-                    </span>
+                  <p className="uppercase font-[500] text-[14px] mb-2">
+                    Technologies & Tools
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    {project?.tech?.map((tec) => (
+                      <div className="mx-2">{tec}</div>
+                    ))}
+                  </div>
+
+                  <div className="flex items-center gap-5 mt-[40px]">
+                    {project?.url?.web?.length > 1 && (
+                      <a
+                        href={project?.url?.web}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`${btnLg} text-[12px] bg-gray-900 text-gray-300 hover:scale-105 gap-2 hover:text-gray-300`}
+                      >
+                        <div className="flex items-center gap-2">
+                          <img className="w-[25px] h-[25px]" src={web} alt="" />
+                          Visit Website
+                        </div>
+                      </a>
+                    )}
+                    {project?.url?.api?.length > 1 && (
+                      <a
+                        href={project?.url?.api}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`${btnLg} text-[12px]  bg-gray-900 text-gray-300 hover:scale-105 gap-2 hover:text-gray-300`}
+                      >
+                        <div className="flex items-center gap-2">
+                          <img className="w-[25px] h-[25px]" src={api} alt="" />
+                          Explore API
+                        </div>
+                      </a>
+                    )}
+                    {project?.url?.github?.length > 1 && (
+                      <a
+                        href={project?.url?.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`${btnLg} text-[12px]  bg-gray-900 text-gray-300 hover:scale-105 gap-2 hover:text-gray-300`}
+                      >
+                        <div className="flex items-center gap-2">
+                          <img
+                            className="w-[25px] h-[25px]"
+                            src={repo}
+                            alt=""
+                          />
+                          View Code
+                        </div>
+                      </a>
+                    )}
                   </div>
                 </div>
-              </div>
-
-              <div className="flex items-center gap-5 mt-[40px]">
-                {selected?.url?.web?.length > 1 && (
-                  <a
-                    href={selected?.url?.web}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={`${btnLg} text-[12px] bg-gray-900 text-gray-300 hover:scale-105 gap-2 hover:text-gray-300`}
-                  >
-                    Visit Website
-                  </a>
-                )}
-                {selected?.url?.api?.length > 1 && (
-                  <a
-                    href={selected?.url?.api}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={`${btnLg} text-[12px]  bg-gray-900 text-gray-300 hover:scale-105 gap-2 hover:text-gray-300`}
-                  >
-                    Explore API
-                  </a>
-                )}
-                {selected?.url?.github?.length > 1 && (
-                  <a
-                    href={selected?.url?.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={`${btnLg} text-[12px]  bg-gray-900 text-gray-300 hover:scale-105 gap-2 hover:text-gray-300`}
-                  >
-                    View Code
-                  </a>
-                )}
               </div>
             </div>
           </div>
-        </div>
-        <div className="mt-10 flex items-center gap-3">
-          <button onClick={() => getPrev()} className="flex items-center gap-2">
-            <span className="text-[14px] font-bold">Previous</span>
-            <img src={prev} alt="" className="w-[35px] h-[35px]" />
-          </button>
-          <span className="text-[14px]">
-            {current + 1}/ {projects?.length}
-          </span>
-          <button onClick={() => getNext()} className="flex items-center gap-2">
-            <img src={next} alt="" className="w-[35px] h-[35px]" />
-            <span className="text-[14px] font-bold">Next</span>
-          </button>
-        </div>
-      </div>
+        ))}
+      </Slider>
     </div>
   );
 };

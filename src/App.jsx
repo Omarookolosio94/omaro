@@ -8,8 +8,8 @@ import {
 import Nav from './core/components/navbar';
 import Footer from './core/components/footer';
 import routes from './routes';
-import burna23 from './assets/BurnaBoy23.mp3';
-import cavemen from './assets/TheCavemenLoveTrials.mp3';
+import burna23 from './assets/music/BurnaBoy23.mp3';
+import cavemen from './assets/music/TheCavemenLoveTrials.mp3';
 
 function App() {
   const getRoutes = (routes) => {

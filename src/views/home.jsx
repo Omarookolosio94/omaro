@@ -1,8 +1,7 @@
 import React from 'react';
-import mugshot from '../assets/maro_sm.png';
+import mugshot from '../assets/icon/maro_sm.png';
 import { PORTFOLIO as data } from '../core/consts/portfolio';
 import { getCurrentDate } from '../core/services/helpers';
-import chalkbg from '../assets/blackbg.jpg';
 
 const Home = () => {
   // TODO: Add about info
@@ -18,15 +17,7 @@ const Home = () => {
           backgroundSize: 'auto 100%, contain',
         }}
       >
-        <div
-          className="w-4/5 absolute left-8 bottom-20 text-white border border-2 border-muted-color bg-black-color p-4 md:w-96 md:left-auto md:p-6 md:bottom-20"
-          style={{
-            backgroundImage: `url(${chalkbg})`,
-            backgroundPosition: '100%',
-            backgroundRepeat: 'no-repeat',
-            borderRadius: '0.375rem',
-          }}
-        >
+        <div className="w-4/5 absolute left-8 bottom-20 text-white border border-2 border-muted-color p-4 md:w-96 md:left-auto md:p-6 md:bottom-20 bg-black rounded-[5px] bg-opacity-3 border-[3px] border-muted-color border-backdrop-blur-sm backdrop-filter">
           <div className="p-2 flex justify-between text-exs">
             {data.skills.map((x) => (
               <span>{x}</span>
